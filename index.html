@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366f1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(99, 102, 241, 0.4)',
+              'glow-lg': '0 0 40px rgba(99, 102, 241, 0.3)',
+              'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+            },
+          },
+        },
+      }
+    </script>
+    <meta name="description" content="HealthNexus - B2B Healthcare Management Platform" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>HealthNexus</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
